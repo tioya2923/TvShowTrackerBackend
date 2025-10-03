@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="8cc63e98-1e78-4940-9d85-92236cd94c2c" name="TrendingPc@TIOYA 2025-09-29 12:59:34" runUser="TIOYA\TrendingPc" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2025-09-29T12:59:34.0731225+01:00" queuing="2025-09-29T12:59:34.0731230+01:00" start="2025-09-29T12:59:32.6712073+01:00" finish="2025-09-29T12:59:34.0769253+01:00" />
+  <TestSettings name="default" id="b9bf3dfc-ed60-4848-8f6e-034fb202c122">
+    <Deployment runDeploymentRoot="TrendingPc_TIOYA_2025-09-29_12_59_34" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="9c79d4a4-5f96-4bbc-9a1d-d3a374d0c3fd" testId="c06d0b6d-4a57-7bc8-e412-01ce910c91d4" testName="UserControllerTests.DeleteUser_ReturnsNotFound_WhenUserDoesNotExist" computerName="TIOYA" duration="00:00:00.0012024" startTime="2025-09-29T12:59:33.6347570+01:00" endTime="2025-09-29T12:59:33.6347570+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9c79d4a4-5f96-4bbc-9a1d-d3a374d0c3fd" />
+    <UnitTestResult executionId="646a533c-b557-44b2-b92a-5c8a6a49945b" testId="af903983-39d6-4335-056c-0abc3ca99519" testName="TvShowTracker.Tests.UnitTest1.Test1" computerName="TIOYA" duration="00:00:00.0014999" startTime="2025-09-29T12:59:33.5999478+01:00" endTime="2025-09-29T12:59:33.5999640+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="646a533c-b557-44b2-b92a-5c8a6a49945b" />
+    <UnitTestResult executionId="6a4b2a24-430b-4fc3-8c12-d8de3927e8d7" testId="a4130051-af16-0f0a-027f-1e829a5d8404" testName="UserControllerTests.GiveConsent_ReturnsOk_WhenUserExists" computerName="TIOYA" duration="00:00:00.0366234" startTime="2025-09-29T12:59:33.6335138+01:00" endTime="2025-09-29T12:59:33.6335142+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6a4b2a24-430b-4fc3-8c12-d8de3927e8d7" />
+    <UnitTestResult executionId="7d54a500-fbe7-459c-a7ff-5f0ac3fb5675" testId="dfb8fcbf-2005-bf10-46fe-b527b7ed9c76" testName="GenreServiceTests.GetGenres_ReturnsCachedGenres_WhenAvailable" computerName="TIOYA" duration="00:00:00.0610049" startTime="2025-09-29T12:59:33.6578839+01:00" endTime="2025-09-29T12:59:33.6578840+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7d54a500-fbe7-459c-a7ff-5f0ac3fb5675" />
+    <UnitTestResult executionId="6b26ee09-973c-4a96-9ff4-d65bebccd587" testId="db604104-43a9-6d57-ee0d-8854fc63caf4" testName="UserServiceTests.DeleteUserData_RemovesUserAndFavorites" computerName="TIOYA" duration="00:00:00.4055030" startTime="2025-09-29T12:59:34.0024000+01:00" endTime="2025-09-29T12:59:34.0024003+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6b26ee09-973c-4a96-9ff4-d65bebccd587" />
+    <UnitTestResult executionId="1fa0f356-4a90-438a-8eab-f1a2043f3c65" testId="14fa9cb3-6674-6150-b864-01523df0ee65" testName="ExportServiceTests.ExportUserDataAsCsv_ReturnsCorrectFormat" computerName="TIOYA" duration="00:00:00.3965887" startTime="2025-09-29T12:59:33.9934768+01:00" endTime="2025-09-29T12:59:33.9934773+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1fa0f356-4a90-438a-8eab-f1a2043f3c65" />
+    <UnitTestResult executionId="e081baa4-13b8-431c-81db-eb6495e0e473" testId="f4c3f1ea-72e3-efb3-5f76-2a9aadd59f7e" testName="GenreControllerTests.GetGenres_ReturnsOkWithGenres" computerName="TIOYA" duration="00:00:00.0367142" startTime="2025-09-29T12:59:33.6337419+01:00" endTime="2025-09-29T12:59:33.6337420+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e081baa4-13b8-431c-81db-eb6495e0e473" />
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="GenreControllerTests.GetGenres_ReturnsOkWithGenres" storage="c:\projects\tvshowtrackerapi\tvshowtracker.tests\bin\debug\net9.0\tvshowtracker.tests.dll" id="f4c3f1ea-72e3-efb3-5f76-2a9aadd59f7e">
+      <Execution id="e081baa4-13b8-431c-81db-eb6495e0e473" />
+      <TestMethod codeBase="C:\Projects\TvShowTrackerApi\TvShowTracker.Tests\bin\Debug\net9.0\TvShowTracker.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="GenreControllerTests" name="GetGenres_ReturnsOkWithGenres" />
+    </UnitTest>
+    <UnitTest name="ExportServiceTests.ExportUserDataAsCsv_ReturnsCorrectFormat" storage="c:\projects\tvshowtrackerapi\tvshowtracker.tests\bin\debug\net9.0\tvshowtracker.tests.dll" id="14fa9cb3-6674-6150-b864-01523df0ee65">
+      <Execution id="1fa0f356-4a90-438a-8eab-f1a2043f3c65" />
+      <TestMethod codeBase="C:\Projects\TvShowTrackerApi\TvShowTracker.Tests\bin\Debug\net9.0\TvShowTracker.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="ExportServiceTests" name="ExportUserDataAsCsv_ReturnsCorrectFormat" />
+    </UnitTest>
+    <UnitTest name="UserControllerTests.GiveConsent_ReturnsOk_WhenUserExists" storage="c:\projects\tvshowtrackerapi\tvshowtracker.tests\bin\debug\net9.0\tvshowtracker.tests.dll" id="a4130051-af16-0f0a-027f-1e829a5d8404">
+      <Execution id="6a4b2a24-430b-4fc3-8c12-d8de3927e8d7" />
+      <TestMethod codeBase="C:\Projects\TvShowTrackerApi\TvShowTracker.Tests\bin\Debug\net9.0\TvShowTracker.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="UserControllerTests" name="GiveConsent_ReturnsOk_WhenUserExists" />
+    </UnitTest>
+    <UnitTest name="TvShowTracker.Tests.UnitTest1.Test1" storage="c:\projects\tvshowtrackerapi\tvshowtracker.tests\bin\debug\net9.0\tvshowtracker.tests.dll" id="af903983-39d6-4335-056c-0abc3ca99519">
+      <Execution id="646a533c-b557-44b2-b92a-5c8a6a49945b" />
+      <TestMethod codeBase="C:\Projects\TvShowTrackerApi\TvShowTracker.Tests\bin\Debug\net9.0\TvShowTracker.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="TvShowTracker.Tests.UnitTest1" name="Test1" />
+    </UnitTest>
+    <UnitTest name="UserServiceTests.DeleteUserData_RemovesUserAndFavorites" storage="c:\projects\tvshowtrackerapi\tvshowtracker.tests\bin\debug\net9.0\tvshowtracker.tests.dll" id="db604104-43a9-6d57-ee0d-8854fc63caf4">
+      <Execution id="6b26ee09-973c-4a96-9ff4-d65bebccd587" />
+      <TestMethod codeBase="C:\Projects\TvShowTrackerApi\TvShowTracker.Tests\bin\Debug\net9.0\TvShowTracker.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="UserServiceTests" name="DeleteUserData_RemovesUserAndFavorites" />
+    </UnitTest>
+    <UnitTest name="UserControllerTests.DeleteUser_ReturnsNotFound_WhenUserDoesNotExist" storage="c:\projects\tvshowtrackerapi\tvshowtracker.tests\bin\debug\net9.0\tvshowtracker.tests.dll" id="c06d0b6d-4a57-7bc8-e412-01ce910c91d4">
+      <Execution id="9c79d4a4-5f96-4bbc-9a1d-d3a374d0c3fd" />
+      <TestMethod codeBase="C:\Projects\TvShowTrackerApi\TvShowTracker.Tests\bin\Debug\net9.0\TvShowTracker.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="UserControllerTests" name="DeleteUser_ReturnsNotFound_WhenUserDoesNotExist" />
+    </UnitTest>
+    <UnitTest name="GenreServiceTests.GetGenres_ReturnsCachedGenres_WhenAvailable" storage="c:\projects\tvshowtrackerapi\tvshowtracker.tests\bin\debug\net9.0\tvshowtracker.tests.dll" id="dfb8fcbf-2005-bf10-46fe-b527b7ed9c76">
+      <Execution id="7d54a500-fbe7-459c-a7ff-5f0ac3fb5675" />
+      <TestMethod codeBase="C:\Projects\TvShowTrackerApi\TvShowTracker.Tests\bin\Debug\net9.0\TvShowTracker.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="GenreServiceTests" name="GetGenres_ReturnsCachedGenres_WhenAvailable" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="c06d0b6d-4a57-7bc8-e412-01ce910c91d4" executionId="9c79d4a4-5f96-4bbc-9a1d-d3a374d0c3fd" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="af903983-39d6-4335-056c-0abc3ca99519" executionId="646a533c-b557-44b2-b92a-5c8a6a49945b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a4130051-af16-0f0a-027f-1e829a5d8404" executionId="6a4b2a24-430b-4fc3-8c12-d8de3927e8d7" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="dfb8fcbf-2005-bf10-46fe-b527b7ed9c76" executionId="7d54a500-fbe7-459c-a7ff-5f0ac3fb5675" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="db604104-43a9-6d57-ee0d-8854fc63caf4" executionId="6b26ee09-973c-4a96-9ff4-d65bebccd587" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="14fa9cb3-6674-6150-b864-01523df0ee65" executionId="1fa0f356-4a90-438a-8eab-f1a2043f3c65" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f4c3f1ea-72e3-efb3-5f76-2a9aadd59f7e" executionId="e081baa4-13b8-431c-81db-eb6495e0e473" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Completed">
+    <Counters total="7" executed="7" passed="7" failed="0" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>[xUnit.net 00:00:00.00] xUnit.net VSTest Adapter v2.8.2+699d445a1a (64-bit .NET 9.0.9)&#xD;
+[xUnit.net 00:00:00.63]   Discovering: TvShowTracker.Tests&#xD;
+[xUnit.net 00:00:00.65]   Discovered:  TvShowTracker.Tests&#xD;
+[xUnit.net 00:00:00.66]   Starting:    TvShowTracker.Tests&#xD;
+[xUnit.net 00:00:01.09]   Finished:    TvShowTracker.Tests&#xD;
+</StdOut>
+    </Output>
+  </ResultSummary>
+</TestRun>
