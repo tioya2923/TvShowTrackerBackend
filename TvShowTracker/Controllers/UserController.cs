@@ -57,11 +57,15 @@ namespace TvShowTracker.Controllers
             var claims = new[]
             {
                 new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()),
-                new Claim(ClaimTypes.Email, user.Email),
-                new Claim(ClaimTypes.Name, user.Name)
+                new Claim(ClaimTypes.Email, user.Email ?? string.Empty),
+                new Claim(ClaimTypes.Name, user.Name ?? string.Empty)
             };
 
-            var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_config["Jwt:Key"]));
+            var secretKey = _config["Jwt:Key"];
+            if (string.IsNullOrWhiteSpace(secretKey))
+                return StatusCode(500, "Chave JWT não configurada.");
+
+            var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(secretKey));
             var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
 
             var expireHours = int.TryParse(_config["Jwt:ExpireHours"], out var hours) ? hours : 2;
@@ -111,11 +115,13 @@ namespace TvShowTracker.Controllers
             if (user == null) return NotFound("Email não encontrado.");
 
             var token = Guid.NewGuid().ToString();
-            user.PasswordResetToken = token;
+
+            // ⚠️ Elimina CS8601 com operador de certeza (!)
+            user.PasswordResetToken = token!;
             user.TokenExpiry = DateTime.UtcNow.AddHours(1);
             await _context.SaveChangesAsync();
 
-            await _emailService.SendAsync(user.Email, "Recuperação de palavra-passe",
+            await _emailService.SendAsync(user.Email ?? string.Empty, "Recuperação de palavra-passe",
                 $"Clique aqui para redefinir: https://teusite.com/reset-password?token={token}");
 
             return Ok("Email enviado.");
