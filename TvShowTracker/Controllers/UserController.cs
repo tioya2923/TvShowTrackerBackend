@@ -86,7 +86,7 @@ namespace TvShowTracker.Controllers
                 profile = new UserProfileDto
                 {
                     Id = user.Id,
-                    Email = user.Email,
+                    Email = user.Email as string ?? string.Empty,
                     Name = user.Name,
                     ConsentGiven = user.ConsentGiven
                 }
@@ -112,20 +112,26 @@ namespace TvShowTracker.Controllers
         public async Task<IActionResult> ForgotPassword([FromBody] ForgotPasswordDto dto)
         {
             var user = await _context.Users.FirstOrDefaultAsync(u => u.Email == dto.Email);
-            if (user == null) return NotFound("Email não encontrado.");
+            if (user is null)
+                return NotFound("Email não encontrado.");
 
             var token = Guid.NewGuid().ToString();
 
-            // ⚠️ Elimina CS8601 com operador de certeza (!)
-            user.PasswordResetToken = token!;
+            // Escopo isolado garante que user não é nulo
+            user.PasswordResetToken = token;
             user.TokenExpiry = DateTime.UtcNow.AddHours(1);
+
             await _context.SaveChangesAsync();
 
-            await _emailService.SendAsync(user.Email ?? string.Empty, "Recuperação de palavra-passe",
-                $"Clique aqui para redefinir: https://teusite.com/reset-password?token={token}");
+            await _emailService.SendAsync(
+                user.Email ?? string.Empty,
+                "Recuperação de palavra-passe",
+                $"Clique aqui para redefinir: https://teusite.com/reset-password?token={token}"
+            );
 
             return Ok("Email enviado.");
         }
+
 
         // Métodos auxiliares (implementação real recomendada)
         private string HashPassword(string password)

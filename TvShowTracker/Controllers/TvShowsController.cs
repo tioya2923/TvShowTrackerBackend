@@ -240,8 +240,14 @@ namespace TvShowTracker.Controllers
                 episode.VideoUrl,
                 TvShow = new
                 {
-                    episode.TvShow.Id,
-                    episode.TvShow.Title
+                    TvShow = episode.TvShow != null
+    ? new
+    {
+        Id = episode.TvShow.Id,
+        Title = episode.TvShow.Title ?? "Título indisponível"
+    }
+    : null
+
                 }
             });
         }
@@ -275,19 +281,19 @@ namespace TvShowTracker.Controllers
         }
 
         [HttpGet("by-title/{title}")]
-public async Task<IActionResult> GetByTitle(string title)
-{
-    var tvShow = await _context.TvShows
-        .Include(t => t.Genres)
-        .Include(t => t.Actors)
-        .Include(t => t.Episodes)
-        .FirstOrDefaultAsync(t => t.Title == title);
+        public async Task<IActionResult> GetByTitle(string title)
+        {
+            var tvShow = await _context.TvShows
+                .Include(t => t.Genres)
+                .Include(t => t.Actors)
+                .Include(t => t.Episodes)
+                .FirstOrDefaultAsync(t => t.Title == title);
 
-    if (tvShow == null)
-        return NotFound("Série não encontrada.");
+            if (tvShow == null)
+                return NotFound("Série não encontrada.");
 
-    return Ok(tvShow);
-}
+            return Ok(tvShow);
+        }
 
     }
 }
